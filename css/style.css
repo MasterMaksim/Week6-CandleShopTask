@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Raleway:wght@300&family=Shizuru&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 2;
+}
+
+.intro-image {
+    background-attachment: fixed;
+    background-image: url('../img/image1.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-image__text a {
+    background-color: #b69b95bd;
+    border: 2px solid #b69b95;
+    color: #825f58;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.intro-image__text a:hover {
+    transform: scale(1.1);
+}
+
+.intro-text {
+    background-color: #825f58;
+    color: #b69b95;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    padding: 0 15rem;
+
+    clip-path: polygon(51% 6%, 100% 0, 100% 44%, 100% 93%, 0 100%, 0 100%, 0 83%, 0 41%, 0 0);
+    margin-top: -1.7rem;
+}
+
+.intro-text_textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.packaging-image {
+    background-attachment: fixed;
+    background-image: url('../img/image2.jpeg');
+    background-size: cover;
+    background-position: bottom;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: -2rem;
+}
+
+.packaging-image__text a {
+    background-color: #bb7747ab;
+    border: 2px solid #bb7747;
+    color: #44352d;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.packaging-image__text a:hover {
+    transform: scale(1.1);
+}
+
+.packaging-text {
+    background-color: #44352dd7;
+    color: #bb7747;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    padding: 0 15rem;
+}
+
+.packaging_text__textbox h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.tutorials-image {
+    background-attachment: fixed;
+    background-image: url('../img/image3.jpeg');
+    background-size: cover;
+    background-position: bottom;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutorials-image__text a {
+    background-color: #786056ad;
+    border: 2px solid #786056;
+    color: #423e38;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+
+    animation-name: moveInLeft2;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft2 {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.tutorials-image__text a:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    color: rgba(0, 0, 0, 0.493);
+    font-size: 2rem;
+    height: 200px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a {
+    color: rgba(0, 0, 0, 0.493);
+    text-decoration: none;
+}
+
+.footer ul li:hover, .footer ul li a:hover {
+    color: rgba(207, 69, 69, 0.733);
+    transform: scale(1.1);
+}
